@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gard"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="Steven Tang", email="stang5@ualberta.ca" },
 ]
