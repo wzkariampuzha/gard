@@ -20,6 +20,7 @@ class GARD:
   def __getitem__(self, gard_id: int | str) -> dict:
     return self.map[int(gard_id)]
 
-  def get_url(self, gard_id: int) -> str:
+  def get_url(self, gard_id: int | str) -> str:
+    gard_id = int(gard_id)
     encoded_name = self[gard_id]['encodedName']
     return f'https://rarediseases.info.nih.gov/diseases/{gard_id}/{encoded_name}'
